@@ -8,18 +8,17 @@ import create from "../lib/create.js";
 const require = createRequire(import.meta.url);
 
 const program = require("commander");
-// const { chalk } = require('@vue/cli-shared-utils')
-// const create = require('../lib/create')
+
 
 program
-  .version(`next-cli ${require("../package").version}`)
+  .version(`rua-cli ${require("../package").version}`)
   .usage("<command> [options]");
 
 program
   .command("create <app-name>")
   .description("创建项目")
   .action((name, options) => {
-    console.log(chalk.bold.blue(`Next CLI V1.0.0`));
+    console.log(chalk.bold.blue(`RUA CLI V1.0.0`));
     create(name, options);
   });
 
@@ -27,7 +26,7 @@ program.on("--help", () => {
   console.log();
   console.log(
     `  Run ${chalk.yellow(
-      `next-cli <command> --help`
+      `rua-cli <command> --help`
     )} for detailed usage of given command.`
   );
   console.log();
