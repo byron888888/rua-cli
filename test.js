@@ -1,4 +1,5 @@
 import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 import chalk from "chalk";
 import inquirer from "inquirer";
 
@@ -8,7 +9,6 @@ console.log(
   )} ${chalk.bgRed("chalk")}!`
 );
 
-const require = createRequire(import.meta.url);
 
 const ejs = require("ejs");
 
