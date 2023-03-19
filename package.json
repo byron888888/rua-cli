@@ -14,9 +14,12 @@
   "author": "nijialun",
   "license": "ISC",
   "dependencies": {
+    "@vue/cli-shared-utils": "^5.0.8",
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "ejs": "^3.1.8",
-    "inquirer": "^9.1.4"
+    "fs-extra": "^11.1.0",
+    "inquirer": "^9.1.4",
+    "javascript-stringify": "^2.1.0"
   }
 }
